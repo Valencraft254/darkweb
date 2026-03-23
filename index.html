@@ -1,40 +1,127 @@
-Tienda body { margin: 0; font-family: Arial; background: white; } 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda</title>
 
-/* Navbar */ .navbar { background: #fff; padding: 10px; border-bottom: 1px solid #ddd; }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: white;
+}
 
-.menu { width: 30px; cursor: pointer; }
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
 
-.menu div { height: 4px; background: black; margin: 5px 0; }
+.menu {
+  width: 30px;
+  cursor: pointer;
+}
 
-/* Header image */ .header { text-align: center; padding: 20px; }
+.menu div {
+  height: 4px;
+  background: black;
+  margin: 5px 0;
+}
 
-.header input { padding: 10px; }
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+}
 
-/* Products */ .products { display: flex; justify-content: center; gap: 40px; padding: 20px; }
+.logo {
+  max-width: 200px;
+}
 
-.product { border: 1px solid #ddd; padding: 15px; text-align: center; width: 200px; }
+/* Products */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
 
-.product img { width: 100%; }
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+}
 
-.buy { background: green; color: white; padding: 10px; border: none; cursor: pointer; }
+.product img {
+  width: 100%;
+}
 
-/* Footer */ .footer { text-align: center; padding: 20px; border-top: 1px solid #ddd; margin-top: 40px; } 
+/* Botón */
+.buy {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
 
-function comprar() { alert("Error al procesar la compra"); } 
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+</style>
 
-Subir imagen:
+<script>
+function comprar() {
+  alert("❌ Error al procesar la compra");
+}
+</script>
 
-Tanque de guerra 
+</head>
+<body>
 
-10000000000 ARS
+<!-- Navbar -->
+<div class="navbar">
+  <div class="menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
 
-Comprar 
+<!-- Logo -->
+<div class="header">
+  <img src="logo.png" alt="logo" class="logo">
+</div>
 
-RPG 
+<!-- Productos -->
+<div class="products">
 
-10000000 ARS
+  <div class="product">
+    <img src="tanque.png" alt="tanque">
+    <h3>Tanque de guerra</h3>
+    <p>10000000000 ARS</p>
+    <button class="buy" onclick="comprar()">Comprar</button>
+  </div>
 
-Comprar 
+  <div class="product">
+    <img src="rpg.png" alt="rpg">
+    <h3>RPG</h3>
+    <p>10000000 ARS</p>
+    <button class="buy" onclick="comprar()">Comprar</button>
+  </div>
 
-⚠️ Esta página web es falsa - solo demostración 
+</div>
 
+<!-- Footer -->
+<div class="footer">
+  ⚠️ Esta página web es falsa - solo demostración
+</div>
+
+</body>
+</html>
